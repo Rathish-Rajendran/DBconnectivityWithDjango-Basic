@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor = "black">
+   <form action = "employees_up" method = "POST">
+     {% csrf_token %}
+
+    <font color = "white">
+    <label for="employee_id">Employee ID:</label><br>
+    </font>
+    <input type="number" id="employee_id" name="employee_id"><br><br>
+
+    <font color = "white">
+    <label for="employee_name"> Employee Name:</label><br>
+    </font>
+    <input type="text" id="employee_name" name="employee_name"><br><br>
+
+    <font color = "white">
+      <label for="employee_num">Employee Number:</label><br>
+      </font>
+      <input type="number" id="employee_num" name="employee_num"><br><br>
+
+    <font color = "white">
+     <label for="address">Address:</label><br>
+    </font>
+    <input type="text" id="address" name="address"><br><br>
+
+
+    <font color = "white">
+    <label for="salary">Salary:</label><br>
+    </font>
+    <input type="number" id="salary" name="salary"><br><br>
+
+    <font color = "white">
+    <label for="job_title">Job Title:</label><br>
+    </font>
+    <input type="text" id="job_title" name="job_title"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  </body>
+</html>

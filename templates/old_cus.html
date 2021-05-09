@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor = "black">
+   <form action = 'old_customer' method = 'POST'> 
+     {% csrf_token %}
+    <font color = "white">
+    <label for="customer_name"> Customer_Name:</label><br>
+    </font>
+    <input type="text" id="customer_name" name="customer_name"><br><br>
+
+    <font color = "white">
+    <label for="treatment">Treatment:</label><br>
+    </font>
+    <input type="text" id="treatment" name="treatment"><br><br>
+
+    <font color = "white">
+    <label for="quantity">Quantity:</label><br>
+    </font>
+    <input type="number" id="quantity" name="quantity"><br><br>
+
+    <font color = "white">
+    <label for="price">Price:</label><br>
+    </font>
+    <input type="number" id="price" name="price"><br><br>
+
+    <font color = "white">
+    <label for="bill_amount">Bill_Amount:</label><br>
+    </font>
+    <input type="number" id="bill_amount" name="bill_amount"><br><br>
+
+    <input type="submit" value="Submit">
+   </form>>
+
+  </body>
+</html>

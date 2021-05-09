@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor = "black">
+   <form action = "customer_det" method = "POST">
+     {% csrf_token %}
+
+    <font color = "white">
+      <label for="customer_detaisl_num">Customer number(phone):</label><br><br>
+      </font>
+      <input type="number" id="customer_detail_num" name="customer_num"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  {% for c in cus %}
+    <font color = "white">
+    <p>Cus_name: &nbsp; {{ c.cus_name }}, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cus_address: &nbsp; {{c.address}},     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Cus_age: &nbsp; {{c.age}},        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cus_number: &nbsp; {{c.contact_num}}
+    </p> 
+    <br><br>
+    </font>
+  {% endfor %}
+
+  </body>
+</html>

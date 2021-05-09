@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body bgcolor = "black">
+   <form action = "employees_det" method = "POST">
+     {% csrf_token %}
+
+    <font color = "white">
+      <label for="employee_detail_num">Employee ID(your number):</label><br><br>
+      </font>
+      <input type="number" id="employee__detail_num" name="employee_num"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  {% for e in emp %}
+    <font color = "white">
+    <p>Emp_name: &nbsp; {{ e.employee_name }}, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emp_address: &nbsp; {{e.address}},     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Emp_Job: &nbsp; {{e.job_title}},        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emp_number: &nbsp; {{e.employee_num}}, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Emp_Salary : &nbsp; {{e.salary}};
+    </p> 
+    <br><br>
+    </font>
+  {% endfor %}
+
+  </body>
+</html>
