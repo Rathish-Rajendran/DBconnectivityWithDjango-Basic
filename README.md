@@ -1,4 +1,4 @@
-# Make yout website interact with database(PostgreSQL)
+# Make your website to interact with the database(PostgreSQL)
 #### This repository consists of scripts in python that can be run inorder to make our website interact with the database(PostgreSQL)
 ##### This is a very basic project that is solely concerned with the connectivity of a webpage with the database. Hence, there importance is no importance
 ##### given to the design and complextity of the webpage. The webpage is coded only using html and it is made dynamic using Django framework in python.
